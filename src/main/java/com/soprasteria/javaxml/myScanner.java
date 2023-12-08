@@ -13,6 +13,13 @@ public class myScanner {
 	}
 	
 	
+	public int LireEntier(String message) {
+	
+		System.out.println(message);
+		return Integer.parseInt(sc.nextLine());
+	}
+	
+	
 	public CompteBancaire LireDonnees() {
 		
 		System.out.println("Veuillez entrer un nom:");
