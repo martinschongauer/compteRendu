@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Comptes><Compte><nom_proprietaire>Baptiste</nom_proprietaire><date_creation>10/08/2000</date_creation><type_compte>Epargne</type_compte><num_compte>10</num_compte><solde>100.5</solde></Compte><Compte><nom_proprietaire>James</nom_proprietaire><date_creation>05/04/1998</date_creation><type_compte>Courant</type_compte><num_compte>56</num_compte><solde>104.6</solde></Compte></Comptes>
