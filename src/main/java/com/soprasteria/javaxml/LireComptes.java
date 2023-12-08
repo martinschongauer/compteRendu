@@ -20,7 +20,7 @@ public class LireComptes {
             Document jdomDoc = (Document) builder.build(xmlFile);
 
             Element root = jdomDoc.getRootElement();
-            List < Element > listOfComptes = root.getChildren("Comptes");
+            List < Element > listOfComptes = root.getChildren("Compte");
             
             List <CompteBancaire> compteList = new ArrayList<CompteBancaire>();
             for(Element compteElement: listOfComptes) 
@@ -35,12 +35,16 @@ public class LireComptes {
             }
 
             // Listage de tous les comptes
-            System.out.println(compteList);
+            System.out.printf("Liste de tous les comptes:%n");
+            for(CompteBancaire cmpt: compteList) {
+            	System.out.println(cmpt);
+            }
             
             // Listage des comptes courants
+            System.out.printf("%nListe des comptes courants:%n");
             for(CompteBancaire cmpt: compteList) 
             {
-            	if (cmpt.getTypeCompte() == "Courant")
+            	if (cmpt.getTypeCompte().equals("Courant"))
             		System.out.println(cmpt);
             }
 
